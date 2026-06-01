@@ -1,0 +1,15 @@
+{
+  "name": "grok-build-prompts",
+  "grokBuild": {
+    "version": "0.2.2",
+    "channel": "stable",
+    "baseUrl": "https://x.ai/cli",
+    "fallbackBaseUrl": "https://storage.googleapis.com/grok-build-public-artifacts/cli"
+  },
+  "private": true,
+  "scripts": {
+    "download:grok": "bun run scripts/download-grok.mjs",
+    "extract": "bun run scripts/extract-grok-prompts.mjs"
+  },
+  "type": "module"
+}

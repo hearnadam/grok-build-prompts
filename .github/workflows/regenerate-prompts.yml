@@ -1,0 +1,50 @@
+name: Regenerate prompts on Grok bump
+
+on:
+  pull_request:
+    types:
+      - opened
+      - synchronize
+      - reopened
+      - labeled
+    paths:
+      - package.json
+      - .github/workflows/regenerate-prompts.yml
+      - .github/workflows/update-grok.yml
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  regenerate:
+    if: contains(github.event.pull_request.labels.*.name, 'grok-bump')
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+          repository: ${{ github.event.pull_request.head.repo.full_name }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+
+      - run: bun run download:grok
+
+      - run: bun run extract
+
+      - name: Commit regenerated prompts
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A prompts skills subagents raw README.md
+          if git diff --cached --quiet; then
+            echo "No prompt changes."
+            exit 0
+          fi
+          GROK_VERSION=$(bun -e "console.log(require('./package.json').grokBuild.version)")
+          git commit -m "Regenerate prompts for Grok Build ${GROK_VERSION}"
+          git push

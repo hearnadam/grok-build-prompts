@@ -1,0 +1,67 @@
+name: Update Grok Build binary
+
+on:
+  schedule:
+    - cron: "29 10 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: update-grok
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+
+      - name: Update Grok Build
+        id: grok
+        run: |
+          current=$(bun -e "console.log(require('./package.json').grokBuild.version)")
+          latest=$(curl -fsSL https://x.ai/cli/stable)
+
+          echo "current=${current}" >> "$GITHUB_OUTPUT"
+          echo "latest=${latest}" >> "$GITHUB_OUTPUT"
+
+          if [ "$current" = "$latest" ]; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          bun -e "const fs=require('fs'); const p=require('./package.json'); p.grokBuild.version='${latest}'; fs.writeFileSync('package.json', JSON.stringify(p, null, 2) + '\n')"
+          GROK_BUILD_VERSION="${latest}" bun run download:grok
+          GROK_BUILD_VERSION="${latest}" bun run extract
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Create update PR
+        id: create-pr
+        if: steps.grok.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: bot/update-grok
+          delete-branch: true
+          title: "deps: update Grok Build to ${{ steps.grok.outputs.latest }}"
+          commit-message: "deps: update Grok Build to ${{ steps.grok.outputs.latest }}"
+          body: |
+            Updates Grok Build from `${{ steps.grok.outputs.current }}` to `${{ steps.grok.outputs.latest }}`.
+
+            This workflow downloads the pinned binary and runs `bun run extract` so generated prompt artifacts stay in sync.
+          labels: grok-bump
+
+      - name: Enable auto-merge
+        if: steps.create-pr.outputs.pull-request-number != ''
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ steps.create-pr.outputs.pull-request-number }}
+        run: gh pr merge "$PR_NUMBER" --auto --squash --delete-branch
