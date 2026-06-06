@@ -5,8 +5,8 @@
     "length": 5479,
     "source": {
       "kind": "rust-slice",
-      "offset": 82994126,
-      "refOffset": 104123840,
+      "offset": 83062798,
+      "refOffset": 104207168,
       "length": 5479
     },
     "preview": "You are an expert software engineer acting as a code verifier.\n\nYour task is to determine whether the code changes made in this session correctly address the us"
@@ -17,8 +17,8 @@
     "length": 986,
     "source": {
       "kind": "rust-slice",
-      "offset": 82903269,
-      "refOffset": 104082224,
+      "offset": 82967061,
+      "refOffset": 104165368,
       "length": 1001
     },
     "preview": "You are a memory assistant performing an incremental update. The previous flush output for this session is shown below. Extract ONLY information that is NEW sin"
@@ -29,8 +29,8 @@
     "length": 3279,
     "source": {
       "kind": "rust-slice",
-      "offset": 81627283,
-      "refOffset": 104044008,
+      "offset": 81689859,
+      "refOffset": 104126992,
       "length": 3279
     },
     "preview": "---\nname: create-skill\ndescription: >\n  Interactively create a new Grok skill (SKILL.md + optional scripts/references).\n  Use when the user wants to create a sk"
