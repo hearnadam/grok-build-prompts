@@ -1,4 +1,5 @@
 import childProcess from 'node:child_process';
+import crypto from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';
 import url from 'node:url';
@@ -204,8 +205,84 @@ function updateReadmeCatalog(catalog) {
   fs.writeFileSync(README_FILE, `${before}\n\n${catalog}\n${after}`);
 }
 
+function snapshotGeneratedFiles() {
+  const dirs = [
+    ['prompt', PROMPTS_DIR],
+    ['subagent', SUBAGENTS_DIR],
+    ['skill', SKILLS_DIR],
+  ];
+  const out = new Map();
+  for (const [category, dir] of dirs) {
+    if (!fs.existsSync(dir)) continue;
+    for (const file of fs.readdirSync(dir).filter((name) => name.endsWith('.md')).sort()) {
+      const name = path.basename(file, '.md');
+      const relativePath = path.relative(ROOT, path.join(dir, file));
+      out.set(`${category}:${name}`, {
+        category,
+        name,
+        path: relativePath,
+        text: fs.readFileSync(path.join(dir, file), 'utf8'),
+      });
+    }
+  }
+  return out;
+}
+
+function hashText(text) {
+  return crypto.createHash('sha256').update(text).digest('hex');
+}
+
+function buildChangeSummary(previousFiles, currentFiles, fromVersion, toVersion) {
+  const previousKeys = new Set(previousFiles.keys());
+  const currentKeys = new Set(currentFiles.keys());
+  const added = [];
+  const removed = [];
+  const changed = [];
+  const unchanged = [];
+
+  for (const key of [...currentKeys].sort()) {
+    const current = currentFiles.get(key);
+    const previous = previousFiles.get(key);
+    if (!previous) {
+      added.push({ category: current.category, name: current.name, path: current.path });
+    } else if (hashText(previous.text) !== hashText(current.text)) {
+      changed.push({ category: current.category, name: current.name, path: current.path });
+    } else {
+      unchanged.push({ category: current.category, name: current.name, path: current.path });
+    }
+  }
+
+  for (const key of [...previousKeys].sort()) {
+    if (currentKeys.has(key)) continue;
+    const previous = previousFiles.get(key);
+    removed.push({ category: previous.category, name: previous.name, path: previous.path });
+  }
+
+  return {
+    fromVersion,
+    toVersion,
+    totals: {
+      added: added.length,
+      removed: removed.length,
+      changed: changed.length,
+      unchanged: unchanged.length,
+    },
+    added,
+    removed,
+    changed,
+    unchanged,
+  };
+}
+
+function formatChangeList(items) {
+  return items.length ? items.map((item) => `- [${item.name}](${item.path})`).join('\n') : '- (none)';
+}
+
 const grokBin = resolveGrokBinary();
 const version = run(grokBin, ['--version']).trim();
+const previousVersionMatch = fs.existsSync(README_FILE) ? fs.readFileSync(README_FILE, 'utf8').match(/^Grok Build:\s+(.+)$/m) : null;
+const previousVersion = previousVersionMatch?.[1] ?? null;
+const previousFiles = snapshotGeneratedFiles();
 let help = '';
 try { help = run(grokBin, ['--help']); } catch (err) { help = JSON.stringify({ error: String(err.message ?? err) }, null, 2); }
 const binary = fs.readFileSync(grokBin);
@@ -232,17 +309,46 @@ fs.writeFileSync(path.join(RAW_DIR, 'rust-string-slices.json'), `${JSON.stringif
 fs.writeFileSync(path.join(RAW_DIR, 'prompt-candidates.json'), `${JSON.stringify(prompts.map((prompt) => ({ name: prompt.name, category: prompt.category, length: prompt.text.length, source: prompt.source })), null, 2)}\n`);
 
 const sections = { prompt: [], subagent: [], skill: [] };
+const currentFiles = new Map();
 for (const prompt of prompts) {
   const file = `${prompt.name}.md`;
   const dir = prompt.category === 'skill' ? SKILLS_DIR : prompt.category === 'subagent' ? SUBAGENTS_DIR : PROMPTS_DIR;
   const relativeDir = prompt.category === 'skill' ? 'skills' : prompt.category === 'subagent' ? 'subagents' : 'prompts';
-  fs.writeFileSync(path.join(dir, file), [`# ${prompt.name}`, '', prompt.text, ''].join('\n'));
+  const text = [`# ${prompt.name}`, '', prompt.text, ''].join('\n');
+  fs.writeFileSync(path.join(dir, file), text);
   sections[prompt.category].push(`- [${prompt.name}](${relativeDir}/${file})`);
+  currentFiles.set(`${prompt.category}:${prompt.name}`, {
+    category: prompt.category,
+    name: prompt.name,
+    path: `${relativeDir}/${file}`,
+    text,
+  });
 }
+const changeSummary = buildChangeSummary(previousFiles, currentFiles, previousVersion, version);
+fs.writeFileSync(path.join(RAW_DIR, 'change-summary.json'), `${JSON.stringify(changeSummary, null, 2)}\n`);
 
 const catalog = [
   `Source binary: ${path.relative(ROOT, grokBin)}`,
   `Grok Build: ${version}`,
+  previousVersion ? `Previous generated version: ${previousVersion}` : 'Previous generated version: (none)',
+  '',
+  'Change summary:',
+  `- Added: ${changeSummary.totals.added}`,
+  `- Changed: ${changeSummary.totals.changed}`,
+  `- Removed: ${changeSummary.totals.removed}`,
+  `- Unchanged: ${changeSummary.totals.unchanged}`,
+  '',
+  '### Added',
+  '',
+  formatChangeList(changeSummary.added),
+  '',
+  '### Changed',
+  '',
+  formatChangeList(changeSummary.changed),
+  '',
+  '### Removed',
+  '',
+  formatChangeList(changeSummary.removed),
   '',
   'Notes:',
   '- The extractor dynamically parses Mach-O sections and uses Rust string-slice records for native prompt components.',
@@ -264,6 +370,7 @@ const catalog = [
   '## Raw Artifacts',
   '',
   '- [grok --help](raw/grok-help.txt)',
+  '- [change summary](raw/change-summary.json)',
   '- [Mach-O section metadata](raw/macho-sections.json)',
   '- [Rust string slice metadata](raw/rust-string-slices.json)',
   '- [prompt candidate metadata](raw/prompt-candidates.json)',

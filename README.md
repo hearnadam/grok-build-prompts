@@ -27,8 +27,27 @@ The scripts write:
 
 <!-- BEGIN GENERATED CATALOG -->
 
-Source binary: vendor/grok/0.2.4/grok
-Grok Build: grok 0.2.4 (60e777b2f61)
+Source binary: vendor/grok/0.2.6/grok
+Grok Build: grok 0.2.6 (17dbcd47314)
+Previous generated version: grok 0.2.6 (17dbcd47314)
+
+Change summary:
+- Added: 0
+- Changed: 0
+- Removed: 0
+- Unchanged: 3
+
+### Added
+
+- (none)
+
+### Changed
+
+- (none)
+
+### Removed
+
+- (none)
 
 Notes:
 - The extractor dynamically parses Mach-O sections and uses Rust string-slice records for native prompt components.
@@ -51,6 +70,7 @@ Notes:
 ## Raw Artifacts
 
 - [grok --help](raw/grok-help.txt)
+- [change summary](raw/change-summary.json)
 - [Mach-O section metadata](raw/macho-sections.json)
 - [Rust string slice metadata](raw/rust-string-slices.json)
 - [prompt candidate metadata](raw/prompt-candidates.json)
