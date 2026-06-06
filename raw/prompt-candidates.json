@@ -5,8 +5,8 @@
     "length": 4972,
     "source": {
       "kind": "rust-slice",
-      "offset": 82347022,
-      "refOffset": 103416856,
+      "offset": 82332094,
+      "refOffset": 103401832,
       "length": 4972
     }
   },
@@ -16,8 +16,8 @@
     "length": 986,
     "source": {
       "kind": "rust-slice",
-      "offset": 82256099,
-      "refOffset": 103375616,
+      "offset": 82240979,
+      "refOffset": 103360544,
       "length": 1001
     }
   },
@@ -27,8 +27,8 @@
     "length": 3279,
     "source": {
       "kind": "rust-slice",
-      "offset": 80981099,
-      "refOffset": 103337584,
+      "offset": 80965811,
+      "refOffset": 103322344,
       "length": 3279
     }
   }
