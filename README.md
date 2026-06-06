@@ -27,8 +27,8 @@ The scripts write:
 
 <!-- BEGIN GENERATED CATALOG -->
 
-Source binary: vendor/grok/0.2.2/grok
-Grok Build: grok 0.2.2 (c9b7cdec23a)
+Source binary: vendor/grok/0.2.3/grok
+Grok Build: grok 0.2.3 (14d81fd875e)
 
 Notes:
 - The extractor dynamically parses Mach-O sections and uses Rust string-slice records for native prompt components.
