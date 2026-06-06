@@ -24,6 +24,12 @@ Options:
       --check
           Append a self-verification loop to the prompt (headless only)
 
+      --compaction-detail <DETAIL>
+          Segments verbatim detail [none|minimal|balanced|verbose] (default `verbose`). Only affects `--compaction-mode segments`. Sets `GROK_COMPACTION_DETAIL`
+
+      --compaction-mode <MODE>
+          Compaction mode [summary|transcript|segments]: `summary` (default) adds no pointer; `transcript` points at the raw transcript; `segments` persists per-segment markdown to grep. Sets `GROK_COMPACTION_MODE`
+
       --cwd <CWD>
           Working directory
 
