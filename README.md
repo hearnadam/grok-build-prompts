@@ -27,19 +27,19 @@ The scripts write:
 
 <!-- BEGIN GENERATED CATALOG -->
 
-Source binary: vendor/grok/0.2.16/grok
-Grok Build: grok 0.2.16 (f7c09b8d8a2)
-Previous generated version: grok 0.2.15 (1f8be36116b)
+Source binary: vendor/grok/0.2.17/grok
+Grok Build: grok 0.2.17 (d42c204ca3e)
+Previous generated version: grok 0.2.16 (f7c09b8d8a2)
 
 Change summary:
-- Added: 0
+- Added: 1
 - Changed: 0
 - Removed: 0
 - Unchanged: 3
 
 ### Added
 
-- (none)
+- [your-task-is-to-produce-a-detailed-faithful-summary-of-the-conversation](prompts/your-task-is-to-produce-a-detailed-faithful-summary-of-the-conversation.md)
 
 ### Changed
 
@@ -58,6 +58,7 @@ Notes:
 
 - [code-verifier](prompts/code-verifier.md)
 - [memory-incremental-update](prompts/memory-incremental-update.md)
+- [your-task-is-to-produce-a-detailed-faithful-summary-of-the-conversation](prompts/your-task-is-to-produce-a-detailed-faithful-summary-of-the-conversation.md)
 
 ## Subagents
 
