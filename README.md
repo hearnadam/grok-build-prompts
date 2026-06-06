@@ -29,7 +29,7 @@ The scripts write:
 
 Source binary: vendor/grok/0.2.6/grok
 Grok Build: grok 0.2.6 (17dbcd47314)
-Previous generated version: grok 0.2.4 (60e777b2f61)
+Previous generated version: grok 0.2.6 (17dbcd47314)
 
 Change summary:
 - Added: 0
