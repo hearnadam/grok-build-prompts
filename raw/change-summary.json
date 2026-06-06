@@ -1,13 +1,19 @@
 {
-  "fromVersion": "grok 0.2.15 (1f8be36116b)",
-  "toVersion": "grok 0.2.16 (f7c09b8d8a2)",
+  "fromVersion": "grok 0.2.16 (f7c09b8d8a2)",
+  "toVersion": "grok 0.2.17 (d42c204ca3e)",
   "totals": {
-    "added": 0,
+    "added": 1,
     "removed": 0,
     "changed": 0,
     "unchanged": 3
   },
-  "added": [],
+  "added": [
+    {
+      "category": "prompt",
+      "name": "your-task-is-to-produce-a-detailed-faithful-summary-of-the-conversation",
+      "path": "prompts/your-task-is-to-produce-a-detailed-faithful-summary-of-the-conversation.md"
+    }
+  ],
   "removed": [],
   "changed": [],
   "unchanged": [
