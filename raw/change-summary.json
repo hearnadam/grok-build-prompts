@@ -1,21 +1,28 @@
 {
-  "fromVersion": "grok 0.2.6 (17dbcd47314)",
-  "toVersion": "grok 0.2.7 (431784abae3)",
+  "fromVersion": "grok 0.2.7 (431784abae3)",
+  "toVersion": "grok 0.2.22 (967574cb117)",
   "totals": {
-    "added": 0,
+    "added": 1,
     "removed": 0,
-    "changed": 0,
-    "unchanged": 3
+    "changed": 1,
+    "unchanged": 2
   },
-  "added": [],
+  "added": [
+    {
+      "category": "prompt",
+      "name": "your-task-is-to-produce-a-detailed-faithful-summary-of-the-conversation",
+      "path": "prompts/your-task-is-to-produce-a-detailed-faithful-summary-of-the-conversation.md"
+    }
+  ],
   "removed": [],
-  "changed": [],
-  "unchanged": [
+  "changed": [
     {
       "category": "prompt",
       "name": "code-verifier",
       "path": "prompts/code-verifier.md"
-    },
+    }
+  ],
+  "unchanged": [
     {
       "category": "prompt",
       "name": "memory-incremental-update",

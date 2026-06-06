@@ -2,12 +2,12 @@
   {
     "name": "code-verifier",
     "category": "prompt",
-    "length": 4972,
+    "length": 5479,
     "source": {
       "kind": "rust-slice",
-      "offset": 84323662,
-      "refOffset": 105585776,
-      "length": 4972
+      "offset": 83989630,
+      "refOffset": 105243096,
+      "length": 5479
     }
   },
   {
@@ -16,9 +16,20 @@
     "length": 986,
     "source": {
       "kind": "rust-slice",
-      "offset": 84233363,
-      "refOffset": 105544760,
+      "offset": 83879481,
+      "refOffset": 105201488,
       "length": 1001
+    }
+  },
+  {
+    "name": "your-task-is-to-produce-a-detailed-faithful-summary-of-the-conversation",
+    "category": "prompt",
+    "length": 640,
+    "source": {
+      "kind": "rust-slice",
+      "offset": 83943317,
+      "refOffset": 105221992,
+      "length": 641
     }
   },
   {
@@ -27,8 +38,8 @@
     "length": 3279,
     "source": {
       "kind": "rust-slice",
-      "offset": 82962459,
-      "refOffset": 105507568,
+      "offset": 82593050,
+      "refOffset": 105159928,
       "length": 3279
     }
   }

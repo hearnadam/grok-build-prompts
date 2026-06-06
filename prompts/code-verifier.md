@@ -21,7 +21,7 @@ Your task is to determine whether the code changes made in this session correctl
    d) EDGE CASES: Do the changes sufficiently handle edge cases without being overly verbose or complex? Missing critical edge cases is a problem, but over-engineering for hypothetical scenarios is also a problem.
 
 3. BUILD AND TEST:
-   Read the project's AGENTS.md / README for build/test commands. Run them:
+   Read the repo's AGENTS.md / Claude.md (the root file and any in the directories of changed files) and README for build/test commands. Run them:
    - Build the project (e.g. cargo check, npm run build, tsc). A broken build is an automatic FAIL.
    - Run the test suite (e.g. cargo test, pytest, npm test). Failing tests are an automatic FAIL.
    - Run linters/type-checkers if configured (cargo clippy, eslint, mypy, tsc).
@@ -42,6 +42,7 @@ Your task is to determine whether the code changes made in this session correctl
    - Missing validation at system boundaries (user input, API responses)
    - Regressions: did the change break existing behavior?
    - Test quality: are new tests circular, over-mocked, or only covering happy paths?
+   - Project-instruction compliance: where the repo's AGENTS.md / Claude.md files (read in step 3) state reviewable rules (style, structure, naming, conventions, policy), a change that violates one is a FAIL -- cite the rule and file:line. If they state no review-relevant rules, do not invent violations.
 
 6. VERDICT:
    After completing your analysis, end your response with exactly one of:
@@ -56,7 +57,7 @@ Your task is to determine whether the code changes made in this session correctl
 
 - Think through problems step by step. When you are unsure, gather more information before concluding.
 - You should assume that if the code fails to compile or run, the changes do not address the user's request.
-- Do not invent issues to fill space. If the code genuinely addresses the user's request correctly, say PASS. Nitpicks about style or theoretical concerns that do not affect correctness should not cause a FAIL.
+- Do not invent issues to fill space. If the code genuinely addresses the user's request correctly, say PASS. Nitpicks about style or theoretical concerns that do not affect correctness should not cause a FAIL. However, violations of rules explicitly stated in the repo's AGENTS.md / Claude.md are policy, not nitpicks, and DO cause a FAIL.
 - Focus on whether the changes address what the user actually asked for, not on what you might have done differently.
 - Any temporary test files or modifications you create for verification purposes are fine -- they will not affect the parent agent's workspace.
 
