@@ -1,19 +1,13 @@
 {
-  "fromVersion": "grok 0.2.16 (f7c09b8d8a2)",
-  "toVersion": "grok 0.2.17 (d42c204ca3e)",
+  "fromVersion": "grok 0.2.17 (d42c204ca3e)",
+  "toVersion": "grok 0.2.18 (573eab47d7d)",
   "totals": {
-    "added": 1,
+    "added": 0,
     "removed": 0,
     "changed": 0,
-    "unchanged": 3
+    "unchanged": 4
   },
-  "added": [
-    {
-      "category": "prompt",
-      "name": "your-task-is-to-produce-a-detailed-faithful-summary-of-the-conversation",
-      "path": "prompts/your-task-is-to-produce-a-detailed-faithful-summary-of-the-conversation.md"
-    }
-  ],
+  "added": [],
   "removed": [],
   "changed": [],
   "unchanged": [
@@ -26,6 +20,11 @@
       "category": "prompt",
       "name": "memory-incremental-update",
       "path": "prompts/memory-incremental-update.md"
+    },
+    {
+      "category": "prompt",
+      "name": "your-task-is-to-produce-a-detailed-faithful-summary-of-the-conversation",
+      "path": "prompts/your-task-is-to-produce-a-detailed-faithful-summary-of-the-conversation.md"
     },
     {
       "category": "skill",
