@@ -1,0 +1,30 @@
+{
+  "fromVersion": "grok 0.2.4 (60e777b2f61)",
+  "toVersion": "grok 0.2.6 (17dbcd47314)",
+  "totals": {
+    "added": 0,
+    "removed": 0,
+    "changed": 0,
+    "unchanged": 3
+  },
+  "added": [],
+  "removed": [],
+  "changed": [],
+  "unchanged": [
+    {
+      "category": "prompt",
+      "name": "code-verifier",
+      "path": "prompts/code-verifier.md"
+    },
+    {
+      "category": "prompt",
+      "name": "memory-incremental-update",
+      "path": "prompts/memory-incremental-update.md"
+    },
+    {
+      "category": "skill",
+      "name": "skill-creator",
+      "path": "skills/skill-creator.md"
+    }
+  ]
+}
