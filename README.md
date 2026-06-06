@@ -27,19 +27,19 @@ The scripts write:
 
 <!-- BEGIN GENERATED CATALOG -->
 
-Source binary: vendor/grok/0.2.17/grok
-Grok Build: grok 0.2.17 (d42c204ca3e)
-Previous generated version: grok 0.2.16 (f7c09b8d8a2)
+Source binary: vendor/grok/0.2.18/grok
+Grok Build: grok 0.2.18 (573eab47d7d)
+Previous generated version: grok 0.2.17 (d42c204ca3e)
 
 Change summary:
-- Added: 1
+- Added: 0
 - Changed: 0
 - Removed: 0
-- Unchanged: 3
+- Unchanged: 4
 
 ### Added
 
-- [your-task-is-to-produce-a-detailed-faithful-summary-of-the-conversation](prompts/your-task-is-to-produce-a-detailed-faithful-summary-of-the-conversation.md)
+- (none)
 
 ### Changed
 
