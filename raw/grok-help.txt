@@ -139,6 +139,7 @@ Options:
 Commands:
   agent        Run Grok without the interactive UI
   completions  Generate shell completion scripts (bash, zsh, fish, powershell, ...)
+  dashboard    Open the Agent Dashboard view at startup
   export       Export a session transcript as Markdown
   help         Print this message or the help of the given subcommand(s)
   import       Import sessions into Grok
