@@ -1,6 +1,10 @@
 Grok Build TUI
 
-Usage: grok [OPTIONS] [COMMAND]
+Usage: grok [OPTIONS] [PROMPT] [COMMAND]
+
+Arguments:
+  [PROMPT]
+          Initial prompt for the interactive session, e.g. `grok "fix the bug"` or `grok --worktree=feat "create this feature"`
 
 Options:
       --agent <NAME>
@@ -32,6 +36,12 @@ Options:
 
       --cwd <CWD>
           Working directory
+
+      --debug
+          Enable debug logging
+
+      --debug-file <FILE>
+          Write debug logs to FILE
 
       --deny <RULE>
           Permission deny rule (Claude Code: --disallowedTools)
