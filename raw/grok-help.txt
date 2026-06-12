@@ -64,9 +64,7 @@ Options:
           Print help (see a summary with '-h')
 
       --leader-socket <PATH>
-          Use a custom leader socket path instead of the default `~/.grok/leader.sock`.
-          
-          Both this client and the leader process it spawns bind this path (propagated via the `GROK_LEADER_SOCKET` env var), so a local/branch build can run an isolated leader without colliding with the default one already running on the machine. The lock file is the sibling `.lock` (e.g. `…/leader-branch.sock` → `…/leader-branch.lock`). Name it `~/.grok/leader-*.sock` to keep `grok leader list/kill` able to find it; any other location works but won't be auto-discovered.
+          Use a custom leader socket path instead of the default `~/.grok/leader.sock`
 
   -m, --model <MODEL>
           Model ID to use

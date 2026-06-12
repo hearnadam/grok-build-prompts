@@ -27,19 +27,19 @@ The scripts write:
 
 <!-- BEGIN GENERATED CATALOG -->
 
-Source binary: vendor/grok/0.2.45/grok
-Grok Build: grok 0.2.45 (e4661b89c04)
-Previous generated version: grok 0.2.39 (55a20b703aa)
+Source binary: vendor/grok/0.2.51/grok
+Grok Build: grok 0.2.51 (f4f85a6492e)
+Previous generated version: grok 0.2.45 (e4661b89c04)
 
 Change summary:
-- Added: 0
+- Added: 1
 - Changed: 0
 - Removed: 0
 - Unchanged: 4
 
 ### Added
 
-- (none)
+- [search-agent](skills/search-agent.md)
 
 ### Changed
 
@@ -66,6 +66,7 @@ Notes:
 
 ## Skills
 
+- [search-agent](skills/search-agent.md)
 - [skill-creator](skills/skill-creator.md)
 
 ## Raw Artifacts
