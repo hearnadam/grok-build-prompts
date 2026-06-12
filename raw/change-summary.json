@@ -1,13 +1,19 @@
 {
-  "fromVersion": "grok 0.2.39 (55a20b703aa)",
-  "toVersion": "grok 0.2.45 (e4661b89c04)",
+  "fromVersion": "grok 0.2.45 (e4661b89c04)",
+  "toVersion": "grok 0.2.51 (f4f85a6492e)",
   "totals": {
-    "added": 0,
+    "added": 1,
     "removed": 0,
     "changed": 0,
     "unchanged": 4
   },
-  "added": [],
+  "added": [
+    {
+      "category": "skill",
+      "name": "search-agent",
+      "path": "skills/search-agent.md"
+    }
+  ],
   "removed": [],
   "changed": [],
   "unchanged": [
