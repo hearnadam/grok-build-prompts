@@ -160,7 +160,7 @@ Commands:
   models       List available models and exit
   plugin       Manage plugins and marketplace sources
   sessions     List, search, or restore sessions
-  setup        Fetch and install managed deployment configuration
+  setup        Fetch and install managed configuration
   ssh          Run ssh with local clipboard support
   trace        Export or upload session trace data
   update       Check for updates or install a specific version

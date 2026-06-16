@@ -27,19 +27,19 @@ The scripts write:
 
 <!-- BEGIN GENERATED CATALOG -->
 
-Source binary: vendor/grok/0.2.51/grok
-Grok Build: grok 0.2.51 (f4f85a6492e)
-Previous generated version: grok 0.2.45 (e4661b89c04)
+Source binary: vendor/grok/0.2.54/grok
+Grok Build: grok 0.2.54 (fee15ff8ea0)
+Previous generated version: grok 0.2.51 (f4f85a6492e)
 
 Change summary:
 - Added: 1
 - Changed: 0
-- Removed: 0
+- Removed: 1
 - Unchanged: 4
 
 ### Added
 
-- [search-agent](skills/search-agent.md)
+- [your-task-is-to-produce-a-faithful-concise-summary-of-the-conversation-s](prompts/your-task-is-to-produce-a-faithful-concise-summary-of-the-conversation-s.md)
 
 ### Changed
 
@@ -47,7 +47,7 @@ Change summary:
 
 ### Removed
 
-- (none)
+- [your-task-is-to-produce-a-detailed-faithful-summary-of-the-conversation](prompts/your-task-is-to-produce-a-detailed-faithful-summary-of-the-conversation.md)
 
 Notes:
 - The extractor dynamically parses Mach-O sections and uses Rust string-slice records for native prompt components.
@@ -58,7 +58,7 @@ Notes:
 
 - [code-verifier](prompts/code-verifier.md)
 - [memory-incremental-update](prompts/memory-incremental-update.md)
-- [your-task-is-to-produce-a-detailed-faithful-summary-of-the-conversation](prompts/your-task-is-to-produce-a-detailed-faithful-summary-of-the-conversation.md)
+- [your-task-is-to-produce-a-faithful-concise-summary-of-the-conversation-s](prompts/your-task-is-to-produce-a-faithful-concise-summary-of-the-conversation-s.md)
 
 ## Subagents
 
