@@ -1,20 +1,26 @@
 {
-  "fromVersion": "grok 0.2.45 (e4661b89c04)",
-  "toVersion": "grok 0.2.51 (f4f85a6492e)",
+  "fromVersion": "grok 0.2.51 (f4f85a6492e)",
+  "toVersion": "grok 0.2.54 (fee15ff8ea0)",
   "totals": {
     "added": 1,
-    "removed": 0,
+    "removed": 1,
     "changed": 0,
     "unchanged": 4
   },
   "added": [
     {
-      "category": "skill",
-      "name": "search-agent",
-      "path": "skills/search-agent.md"
+      "category": "prompt",
+      "name": "your-task-is-to-produce-a-faithful-concise-summary-of-the-conversation-s",
+      "path": "prompts/your-task-is-to-produce-a-faithful-concise-summary-of-the-conversation-s.md"
     }
   ],
-  "removed": [],
+  "removed": [
+    {
+      "category": "prompt",
+      "name": "your-task-is-to-produce-a-detailed-faithful-summary-of-the-conversation",
+      "path": "prompts/your-task-is-to-produce-a-detailed-faithful-summary-of-the-conversation.md"
+    }
+  ],
   "changed": [],
   "unchanged": [
     {
@@ -28,9 +34,9 @@
       "path": "prompts/memory-incremental-update.md"
     },
     {
-      "category": "prompt",
-      "name": "your-task-is-to-produce-a-detailed-faithful-summary-of-the-conversation",
-      "path": "prompts/your-task-is-to-produce-a-detailed-faithful-summary-of-the-conversation.md"
+      "category": "skill",
+      "name": "search-agent",
+      "path": "skills/search-agent.md"
     },
     {
       "category": "skill",

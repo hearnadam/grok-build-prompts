@@ -1,0 +1,3 @@
+# your-task-is-to-produce-a-faithful-concise-summary-of-the-conversation-s
+
+Your task is to produce a faithful, concise summary of the conversation so far so that a successor assistant can continue the work seamlessly after the earlier turns are discarded. The successor will see the user's original query plus this summary. Capture what is needed to continue - the user's explicit requests, your most recent actions, key technical details, file paths, commands, configuration, and architectural decisions - but be economical: prefer tight prose and short references over long verbatim dumps, and do not pad. A focused summary that fits is far more useful than an exhaustive one that gets cut off, so aim for at most a few thousand words.
