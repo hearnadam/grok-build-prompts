@@ -5,8 +5,8 @@
     "length": 5479,
     "source": {
       "kind": "rust-slice",
-      "offset": 96220566,
-      "refOffset": 117778944,
+      "offset": 93448443,
+      "refOffset": 114715528,
       "length": 5479
     },
     "preview": "You are an expert software engineer acting as a code verifier.\n\nYour task is to determine whether the code changes made in this session correctly address the us"
@@ -17,8 +17,8 @@
     "length": 986,
     "source": {
       "kind": "rust-slice",
-      "offset": 96092115,
-      "refOffset": 117739088,
+      "offset": 93349958,
+      "refOffset": 114624600,
       "length": 1001
     },
     "preview": "You are a memory assistant performing an incremental update. The previous flush output for this session is shown below. Extract ONLY information that is NEW sin"
@@ -29,8 +29,8 @@
     "length": 662,
     "source": {
       "kind": "rust-slice",
-      "offset": 96174392,
-      "refOffset": 117757416,
+      "offset": 93526118,
+      "refOffset": 114757584,
       "length": 667
     },
     "preview": "Your task is to produce a faithful, concise summary of the conversation so far so that a successor assistant can continue the work seamlessly after the earlier "
@@ -41,8 +41,8 @@
     "length": 12349,
     "source": {
       "kind": "rust-slice",
-      "offset": 94786651,
-      "refOffset": 117690368,
+      "offset": 92100094,
+      "refOffset": 114590944,
       "length": 12350
     },
     "preview": "---\nname: code-review\ndescription: Run an extremely strict maintainability review for abstraction quality, giant files, and spaghetti-condition growth. Use for "
@@ -53,8 +53,8 @@
     "length": 3279,
     "source": {
       "kind": "rust-slice",
-      "offset": 94783361,
-      "refOffset": 117690336,
+      "offset": 92096804,
+      "refOffset": 114590912,
       "length": 3279
     },
     "preview": "---\nname: create-skill\ndescription: >\n  Interactively create a new Grok skill (SKILL.md + optional scripts/references).\n  Use when the user wants to create a sk"
