@@ -19,6 +19,11 @@ Options:
       --always-approve
           Auto-approve all tool executions
 
+      --background-wait-timeout <SECS>
+          Max seconds to wait for background work after the first turn ends (headless only). Applies to bash/monitor `task_completed`, background subagents (`SubagentFinished`), and any still-running non-persistent work. Persistent `monitor(persistent:true)` never completes and always waits the full timeout — use `--no-wait-for-background` or a lower timeout for throughput. Conflicts with `--no-wait-for-background`
+          
+          [default: 600]
+
       --best-of-n <N>
           Run the task N ways in parallel and pick the best (headless only)
 
@@ -83,6 +88,9 @@ Options:
 
       --no-subagents
           Disable subagent spawning
+
+      --no-wait-for-background
+          Exit as soon as the first agent turn ends, without waiting for pending background bash/monitor tasks or background subagents (headless only). Default for all `grok -p` runs is to wait (up to `--background-wait-timeout`) so eval harnesses see full task completion. Use this for fast scripts that only need the first turn's text. Does not wait for server-side auto-wake output or persistent monitors (those hit the timeout)
 
       --oauth
           Use OAuth when the welcome screen starts authentication

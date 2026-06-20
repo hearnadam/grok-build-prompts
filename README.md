@@ -27,9 +27,9 @@ The scripts write:
 
 <!-- BEGIN GENERATED CATALOG -->
 
-Source binary: vendor/grok/0.2.56/grok
-Grok Build: grok 0.2.56 (4d4448c98df)
-Previous generated version: grok 0.2.54 (fee15ff8ea0)
+Source binary: vendor/grok/0.2.59/grok
+Grok Build: grok 0.2.59 (d73c632f81a)
+Previous generated version: grok 0.2.56 (4d4448c98df)
 
 Change summary:
 - Added: 0
