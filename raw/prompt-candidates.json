@@ -5,8 +5,8 @@
     "length": 5479,
     "source": {
       "kind": "rust-slice",
-      "offset": 93974875,
-      "refOffset": 115383576,
+      "offset": 96138755,
+      "refOffset": 117832200,
       "length": 5479
     }
   },
@@ -16,8 +16,8 @@
     "length": 986,
     "source": {
       "kind": "rust-slice",
-      "offset": 93875263,
-      "refOffset": 115291400,
+      "offset": 96037632,
+      "refOffset": 117737632,
       "length": 1001
     }
   },
@@ -27,8 +27,8 @@
     "length": 662,
     "source": {
       "kind": "rust-slice",
-      "offset": 94053598,
-      "refOffset": 115425808,
+      "offset": 96217897,
+      "refOffset": 117874480,
       "length": 667
     }
   },
@@ -38,8 +38,8 @@
     "length": 12349,
     "source": {
       "kind": "rust-slice",
-      "offset": 92625229,
-      "refOffset": 115257528,
+      "offset": 94788185,
+      "refOffset": 117704416,
       "length": 12350
     }
   },
@@ -49,8 +49,8 @@
     "length": 3279,
     "source": {
       "kind": "rust-slice",
-      "offset": 92621939,
-      "refOffset": 115257496,
+      "offset": 94784895,
+      "refOffset": 117704384,
       "length": 3279
     }
   }
