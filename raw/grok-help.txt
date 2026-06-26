@@ -38,6 +38,8 @@ Options:
           Enable cross-session memory
   -h, --help
           Print help
+      --json-schema <SCHEMA>
+          JSON Schema for structured output. When set, the model is constrained to produce JSON matching this schema. Implies --output-format json. Example: --json-schema '{"type":"object","properties":{"name":{"type":"string"}}}'
       --leader-socket <PATH>
           Use a custom leader socket path instead of the default `~/.grok/leader.sock`
   -m, --model <MODEL>
@@ -84,6 +86,8 @@ Options:
           Send the prompt exactly as given
   -w, --worktree [<WORKTREE>]
           Start the session in a new git worktree, optionally named
+      --worktree-ref <WORKTREE_REF>
+          Branch, tag, or commit to base the worktree on (with `--worktree`). Defaults to the current HEAD of the source checkout when omitted [aliases: --ref]
 
 Commands:
   agent        Run Grok without the interactive UI
