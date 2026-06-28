@@ -36,6 +36,8 @@ Options:
           Effort level [possible values: low, medium, high, xhigh, max]
       --experimental-memory
           Enable cross-session memory
+      --fork-session
+          When resuming (`--resume` / `--continue`), create a new session ID instead of reusing the original (optionally set via `--session-id`)
   -h, --help
           Print help
       --json-schema <SCHEMA>
@@ -74,6 +76,8 @@ Options:
           Check out the original session's commit when resuming
       --rules <RULES>
           Extra rules to append to the system prompt
+  -s, --session-id <SESSION_ID>
+          Use a specific session UUID for a **new** conversation (must be a valid UUID and must not already exist under the target session directory). With `--resume`/`--continue`, only valid together with `--fork-session` (names the forked session). Does not resume existing sessions — use `--resume` / `--continue` instead
       --sandbox <PROFILE>
           Sandbox profile for filesystem and network access [env: GROK_SANDBOX=]
       --system-prompt-override <PROMPT>
@@ -106,8 +110,8 @@ Commands:
   plugin       Manage plugins and marketplace sources
   sessions     List, search, or restore sessions
   setup        Fetch and install managed configuration
-  ssh          Run ssh with local clipboard support
   trace        Export or upload session trace data
   update       Check for updates or install a specific version
   version      Print version information [aliases: v]
   worktree     Manage git worktrees
+  wrap         Run any command with local clipboard support (OSC 52 → system clipboard)
