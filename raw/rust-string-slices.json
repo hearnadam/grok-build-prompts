@@ -5,8 +5,8 @@
     "length": 5479,
     "source": {
       "kind": "rust-slice",
-      "offset": 99600019,
-      "refOffset": 121660448,
+      "offset": 100073643,
+      "refOffset": 122182616,
       "length": 5479
     },
     "preview": "You are an expert software engineer acting as a code verifier.\n\nYour task is to determine whether the code changes made in this session correctly address the us"
@@ -17,8 +17,8 @@
     "length": 986,
     "source": {
       "kind": "rust-slice",
-      "offset": 99502119,
-      "refOffset": 121569488,
+      "offset": 99976315,
+      "refOffset": 122092728,
       "length": 1001
     },
     "preview": "You are a memory assistant performing an incremental update. The previous flush output for this session is shown below. Extract ONLY information that is NEW sin"
@@ -29,8 +29,8 @@
     "length": 662,
     "source": {
       "kind": "rust-slice",
-      "offset": 99669441,
-      "refOffset": 121694496,
+      "offset": 100143320,
+      "refOffset": 122217056,
       "length": 667
     },
     "preview": "Your task is to produce a faithful, concise summary of the conversation so far so that a successor assistant can continue the work seamlessly after the earlier "
@@ -41,8 +41,8 @@
     "length": 12349,
     "source": {
       "kind": "rust-slice",
-      "offset": 98246092,
-      "refOffset": 121530728,
+      "offset": 98718847,
+      "refOffset": 122052288,
       "length": 12350
     },
     "preview": "---\nname: code-review\ndescription: Run an extremely strict maintainability review for abstraction quality, giant files, and spaghetti-condition growth. Use for "
@@ -53,8 +53,8 @@
     "length": 3279,
     "source": {
       "kind": "rust-slice",
-      "offset": 98242802,
-      "refOffset": 121530696,
+      "offset": 98715557,
+      "refOffset": 122052256,
       "length": 3279
     },
     "preview": "---\nname: create-skill\ndescription: >\n  Interactively create a new Grok skill (SKILL.md + optional scripts/references).\n  Use when the user wants to create a sk"
