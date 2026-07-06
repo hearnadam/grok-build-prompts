@@ -27,19 +27,21 @@ The scripts write:
 
 <!-- BEGIN GENERATED CATALOG -->
 
-Source binary: vendor/grok/0.2.82/grok
-Grok Build: grok 0.2.82 (6d0b07d2de0f)
-Previous generated version: grok 0.2.77 (44e77bec3af6)
+Source binary: vendor/grok/0.2.87/grok
+Grok Build: grok 0.2.87 (0ae0bf47e53)
+Previous generated version: grok 0.2.82 (6d0b07d2de0f)
 
 Change summary:
-- Added: 0
+- Added: 3
 - Changed: 0
 - Removed: 0
 - Unchanged: 5
 
 ### Added
 
-- (none)
+- [search-agent](prompts/search-agent.md)
+- [search-agent-2](prompts/search-agent-2.md)
+- [search-agent-3](prompts/search-agent-3.md)
 
 ### Changed
 
@@ -58,6 +60,9 @@ Notes:
 
 - [code-verifier](prompts/code-verifier.md)
 - [memory-incremental-update](prompts/memory-incremental-update.md)
+- [search-agent](prompts/search-agent.md)
+- [search-agent-2](prompts/search-agent-2.md)
+- [search-agent-3](prompts/search-agent-3.md)
 - [your-task-is-to-produce-a-faithful-concise-summary-of-the-conversation-s](prompts/your-task-is-to-produce-a-faithful-concise-summary-of-the-conversation-s.md)
 
 ## Subagents

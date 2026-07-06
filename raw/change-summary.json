@@ -1,13 +1,29 @@
 {
-  "fromVersion": "grok 0.2.77 (44e77bec3af6)",
-  "toVersion": "grok 0.2.82 (6d0b07d2de0f)",
+  "fromVersion": "grok 0.2.82 (6d0b07d2de0f)",
+  "toVersion": "grok 0.2.87 (0ae0bf47e53)",
   "totals": {
-    "added": 0,
+    "added": 3,
     "removed": 0,
     "changed": 0,
     "unchanged": 5
   },
-  "added": [],
+  "added": [
+    {
+      "category": "prompt",
+      "name": "search-agent",
+      "path": "prompts/search-agent.md"
+    },
+    {
+      "category": "prompt",
+      "name": "search-agent-2",
+      "path": "prompts/search-agent-2.md"
+    },
+    {
+      "category": "prompt",
+      "name": "search-agent-3",
+      "path": "prompts/search-agent-3.md"
+    }
+  ],
   "removed": [],
   "changed": [],
   "unchanged": [
