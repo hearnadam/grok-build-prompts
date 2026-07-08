@@ -32,8 +32,6 @@ Options:
           Disable web search and web fetch tools
       --disallowed-tools <TOOLS>
           Built-in tools to remove (comma-separated)
-      --effort <LEVEL>
-          Effort level [possible values: low, medium, high, xhigh, max]
       --experimental-memory
           Enable cross-session memory
       --fork-session
@@ -73,7 +71,7 @@ Options:
   -r, --resume [<SESSION_ID>]
           Resume a session by ID, or the most recent if omitted
       --reasoning-effort <EFFORT>
-          Reasoning effort for reasoning models
+          Reasoning effort for reasoning models [aliases: --effort]
       --restore-code
           Check out the original session's commit when resuming
       --rules <RULES>

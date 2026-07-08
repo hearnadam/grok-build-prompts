@@ -1,13 +1,26 @@
 {
-  "fromVersion": "grok 0.2.82 (6d0b07d2de0f)",
-  "toVersion": "grok 0.2.87 (0ae0bf47e53)",
+  "fromVersion": "grok 0.2.87 (0ae0bf47e53)",
+  "toVersion": "grok 0.2.91 (39d0c6872354)",
   "totals": {
-    "added": 3,
+    "added": 0,
     "removed": 0,
     "changed": 0,
-    "unchanged": 5
+    "unchanged": 8
   },
-  "added": [
+  "added": [],
+  "removed": [],
+  "changed": [],
+  "unchanged": [
+    {
+      "category": "prompt",
+      "name": "code-verifier",
+      "path": "prompts/code-verifier.md"
+    },
+    {
+      "category": "prompt",
+      "name": "memory-incremental-update",
+      "path": "prompts/memory-incremental-update.md"
+    },
     {
       "category": "prompt",
       "name": "search-agent",
@@ -22,20 +35,6 @@
       "category": "prompt",
       "name": "search-agent-3",
       "path": "prompts/search-agent-3.md"
-    }
-  ],
-  "removed": [],
-  "changed": [],
-  "unchanged": [
-    {
-      "category": "prompt",
-      "name": "code-verifier",
-      "path": "prompts/code-verifier.md"
-    },
-    {
-      "category": "prompt",
-      "name": "memory-incremental-update",
-      "path": "prompts/memory-incremental-update.md"
     },
     {
       "category": "prompt",
