@@ -1,21 +1,22 @@
 {
-  "fromVersion": "grok 0.2.87 (0ae0bf47e53)",
-  "toVersion": "grok 0.2.91 (39d0c6872354)",
+  "fromVersion": "grok 0.2.91 (39d0c6872354)",
+  "toVersion": "grok 0.2.93 (f00f96316d4b)",
   "totals": {
     "added": 0,
-    "removed": 0,
+    "removed": 1,
     "changed": 0,
-    "unchanged": 8
+    "unchanged": 7
   },
   "added": [],
-  "removed": [],
-  "changed": [],
-  "unchanged": [
+  "removed": [
     {
       "category": "prompt",
       "name": "code-verifier",
       "path": "prompts/code-verifier.md"
-    },
+    }
+  ],
+  "changed": [],
+  "unchanged": [
     {
       "category": "prompt",
       "name": "memory-incremental-update",
