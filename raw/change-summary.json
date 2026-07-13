@@ -1,20 +1,14 @@
 {
-  "fromVersion": "grok 0.2.91 (39d0c6872354)",
-  "toVersion": "grok 0.2.93 (f00f96316d4b)",
+  "fromVersion": "grok 0.2.93 (f00f96316d4b)",
+  "toVersion": "grok 0.2.99 (b1b49ccb71a7)",
   "totals": {
     "added": 0,
-    "removed": 1,
+    "removed": 0,
     "changed": 0,
     "unchanged": 7
   },
   "added": [],
-  "removed": [
-    {
-      "category": "prompt",
-      "name": "code-verifier",
-      "path": "prompts/code-verifier.md"
-    }
-  ],
+  "removed": [],
   "changed": [],
   "unchanged": [
     {
