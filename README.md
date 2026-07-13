@@ -27,14 +27,14 @@ The scripts write:
 
 <!-- BEGIN GENERATED CATALOG -->
 
-Source binary: vendor/grok/0.2.93/grok
-Grok Build: grok 0.2.93 (f00f96316d4b)
-Previous generated version: grok 0.2.91 (39d0c6872354)
+Source binary: vendor/grok/0.2.99/grok
+Grok Build: grok 0.2.99 (b1b49ccb71a7)
+Previous generated version: grok 0.2.93 (f00f96316d4b)
 
 Change summary:
 - Added: 0
 - Changed: 0
-- Removed: 1
+- Removed: 0
 - Unchanged: 7
 
 ### Added
@@ -47,7 +47,7 @@ Change summary:
 
 ### Removed
 
-- [code-verifier](prompts/code-verifier.md)
+- (none)
 
 Notes:
 - The extractor dynamically parses Mach-O sections and uses Rust string-slice records for native prompt components.
