@@ -5,8 +5,8 @@
     "length": 986,
     "source": {
       "kind": "rust-slice",
-      "offset": 103074695,
-      "refOffset": 125351184,
+      "offset": 96458123,
+      "refOffset": 117829456,
       "length": 1001
     },
     "preview": "You are a memory assistant performing an incremental update. The previous flush output for this session is shown below. Extract ONLY information that is NEW sin"
@@ -17,8 +17,8 @@
     "length": 1130,
     "source": {
       "kind": "rust-slice",
-      "offset": 100033382,
-      "refOffset": 124269824,
+      "offset": 94571273,
+      "refOffset": 116716144,
       "length": 1130
     },
     "preview": "Complete the assigned task directly. Do what was asked; nothing more, nothing less. Respond with a detailed writeup when done.\n\nStrengths:\n- Searching across la"
@@ -29,8 +29,8 @@
     "length": 1305,
     "source": {
       "kind": "rust-slice",
-      "offset": 100038840,
-      "refOffset": 124270032,
+      "offset": 94576551,
+      "refOffset": 116716352,
       "length": 1305
     },
     "preview": "You are a read-only software architect. Explore the codebase and design implementation plans.\n\n=== READ-ONLY MODE ===\nYou have NO file editing tools. Do not cre"
@@ -41,8 +41,8 @@
     "length": 981,
     "source": {
       "kind": "rust-slice",
-      "offset": 100040798,
-      "refOffset": 124270192,
+      "offset": 94578086,
+      "refOffset": 116716512,
       "length": 981
     },
     "preview": "You are a fast, read-only codebase exploration agent.\n\n=== READ-ONLY MODE ===\nYou have NO file editing tools. Do not create, modify, or delete files.${%- if too"
@@ -53,8 +53,8 @@
     "length": 662,
     "source": {
       "kind": "rust-slice",
-      "offset": 103236595,
-      "refOffset": 125469440,
+      "offset": 96615256,
+      "refOffset": 117946448,
       "length": 667
     },
     "preview": "Your task is to produce a faithful, concise summary of the conversation so far so that a successor assistant can continue the work seamlessly after the earlier "
@@ -65,8 +65,8 @@
     "length": 12349,
     "source": {
       "kind": "rust-slice",
-      "offset": 101808567,
-      "refOffset": 125314232,
+      "offset": 96383941,
+      "refOffset": 117795200,
       "length": 12350
     },
     "preview": "---\nname: code-review\ndescription: Run an extremely strict maintainability review for abstraction quality, giant files, and spaghetti-condition growth. Use for "
@@ -77,8 +77,8 @@
     "length": 3279,
     "source": {
       "kind": "rust-slice",
-      "offset": 101805277,
-      "refOffset": 125314200,
+      "offset": 96380651,
+      "refOffset": 117795168,
       "length": 3279
     },
     "preview": "---\nname: create-skill\ndescription: >\n  Interactively create a new Grok skill (SKILL.md + optional scripts/references).\n  Use when the user wants to create a sk"
