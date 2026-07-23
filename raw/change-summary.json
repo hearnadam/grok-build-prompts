@@ -1,14 +1,25 @@
 {
-  "fromVersion": "grok 0.2.103 (89c3d36fb6f1)",
-  "toVersion": "grok 0.2.106 (bde89716f679)",
+  "fromVersion": "grok 0.2.106 (bde89716f679)",
+  "toVersion": "grok 0.2.111 (94172f2aa4e5)",
   "totals": {
     "added": 0,
-    "removed": 0,
+    "removed": 2,
     "changed": 0,
-    "unchanged": 7
+    "unchanged": 5
   },
   "added": [],
-  "removed": [],
+  "removed": [
+    {
+      "category": "skill",
+      "name": "search-agent",
+      "path": "skills/search-agent.md"
+    },
+    {
+      "category": "skill",
+      "name": "skill-creator",
+      "path": "skills/skill-creator.md"
+    }
+  ],
   "changed": [],
   "unchanged": [
     {
@@ -35,16 +46,6 @@
       "category": "prompt",
       "name": "your-task-is-to-produce-a-faithful-concise-summary-of-the-conversation-s",
       "path": "prompts/your-task-is-to-produce-a-faithful-concise-summary-of-the-conversation-s.md"
-    },
-    {
-      "category": "skill",
-      "name": "search-agent",
-      "path": "skills/search-agent.md"
-    },
-    {
-      "category": "skill",
-      "name": "skill-creator",
-      "path": "skills/skill-creator.md"
     }
   ]
 }

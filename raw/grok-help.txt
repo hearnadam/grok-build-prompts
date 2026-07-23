@@ -14,12 +14,8 @@ Options:
           Permission allow rule (compat alias: --allowedTools)
       --always-approve
           Auto-approve all tool executions
-      --best-of-n <N>
-          Run the task N ways in parallel and pick the best (headless only)
   -c, --continue
           Continue the most recent session for the current working directory
-      --check
-          Append a self-verification loop to the prompt (headless only)
       --cwd <CWD>
           Working directory
       --debug
@@ -99,6 +95,7 @@ Commands:
   agent        Run Grok without the interactive UI
   completions  Generate shell completion scripts (bash, zsh, fish, powershell, ...)
   dashboard    Open the Agent Dashboard view at startup
+  doctor       Check terminal support and configuration without starting Grok
   export       Export a session transcript as Markdown
   help         Print this message or the help of the given subcommand(s)
   inspect      Show the configuration Grok discovers for this directory

@@ -5,8 +5,8 @@
     "length": 986,
     "source": {
       "kind": "rust-slice",
-      "offset": 97012415,
-      "refOffset": 118444328,
+      "offset": 103004095,
+      "refOffset": 125286880,
       "length": 1001
     }
   },
@@ -16,8 +16,8 @@
     "length": 1130,
     "source": {
       "kind": "rust-slice",
-      "offset": 95103771,
-      "refOffset": 117322440,
+      "offset": 101086211,
+      "refOffset": 124131000,
       "length": 1130
     }
   },
@@ -27,8 +27,8 @@
     "length": 1305,
     "source": {
       "kind": "rust-slice",
-      "offset": 95109049,
-      "refOffset": 117322648,
+      "offset": 101091502,
+      "refOffset": 124131208,
       "length": 1305
     }
   },
@@ -38,8 +38,8 @@
     "length": 981,
     "source": {
       "kind": "rust-slice",
-      "offset": 95110584,
-      "refOffset": 117322808,
+      "offset": 101093037,
+      "refOffset": 124131368,
       "length": 981
     }
   },
@@ -49,31 +49,9 @@
     "length": 662,
     "source": {
       "kind": "rust-slice",
-      "offset": 97170336,
-      "refOffset": 118562232,
+      "offset": 103204520,
+      "refOffset": 125425672,
       "length": 667
-    }
-  },
-  {
-    "name": "search-agent",
-    "category": "skill",
-    "length": 12349,
-    "source": {
-      "kind": "rust-slice",
-      "offset": 96937548,
-      "refOffset": 118410056,
-      "length": 12350
-    }
-  },
-  {
-    "name": "skill-creator",
-    "category": "skill",
-    "length": 3279,
-    "source": {
-      "kind": "rust-slice",
-      "offset": 96934258,
-      "refOffset": 118410024,
-      "length": 3279
     }
   }
 ]
