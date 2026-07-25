@@ -66,8 +66,8 @@ Options:
           Single-turn prompt from a file
       --prompt-json <JSON>
           Single-turn prompt as JSON content blocks
-  -r, --resume [<SESSION_ID>]
-          Resume a session by ID, or the most recent if omitted
+  -r, --resume [<SESSION_ID_OR_TITLE>]
+          Resume a session by ID or title, or the most recent if omitted. Non-ID values match session titles for the current directory (ignoring letter case; a sole renamed match wins among duplicates, otherwise ambiguity errors; UUID-shaped values always mean IDs)
       --reasoning-effort <EFFORT>
           Reasoning effort for reasoning models [aliases: --effort]
       --restore-code
@@ -95,7 +95,7 @@ Commands:
   agent        Run Grok without the interactive UI
   completions  Generate shell completion scripts (bash, zsh, fish, powershell, ...)
   dashboard    Open the Agent Dashboard view at startup
-  doctor       Check terminal support and configuration without starting Grok
+  doctor       Check terminal, clipboard, color, and input support without starting Grok
   export       Export a session transcript as Markdown
   help         Print this message or the help of the given subcommand(s)
   inspect      Show the configuration Grok discovers for this directory
