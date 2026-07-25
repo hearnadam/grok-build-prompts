@@ -27,14 +27,14 @@ The scripts write:
 
 <!-- BEGIN GENERATED CATALOG -->
 
-Source binary: vendor/grok/0.2.111/grok
-Grok Build: grok 0.2.111 (94172f2aa4e5)
-Previous generated version: grok 0.2.106 (bde89716f679)
+Source binary: vendor/grok/0.2.112/grok
+Grok Build: grok 0.2.112 (9bbd559437aa)
+Previous generated version: grok 0.2.111 (94172f2aa4e5)
 
 Change summary:
 - Added: 0
 - Changed: 0
-- Removed: 2
+- Removed: 0
 - Unchanged: 5
 
 ### Added
@@ -47,8 +47,7 @@ Change summary:
 
 ### Removed
 
-- [search-agent](skills/search-agent.md)
-- [skill-creator](skills/skill-creator.md)
+- (none)
 
 Notes:
 - The extractor dynamically parses Mach-O sections and uses Rust string-slice records for native prompt components.
