@@ -5,8 +5,8 @@
     "length": 986,
     "source": {
       "kind": "rust-slice",
-      "offset": 104801975,
-      "refOffset": 127368864,
+      "offset": 105476088,
+      "refOffset": 128113992,
       "length": 1001
     },
     "preview": "You are a memory assistant performing an incremental update. The previous flush output for this session is shown below. Extract ONLY information that is NEW sin"
@@ -17,8 +17,8 @@
     "length": 1130,
     "source": {
       "kind": "rust-slice",
-      "offset": 102761297,
-      "refOffset": 126184096,
+      "offset": 103414193,
+      "refOffset": 126919832,
       "length": 1130
     },
     "preview": "Complete the assigned task directly. Do what was asked; nothing more, nothing less. Respond with a detailed writeup when done.\n\nStrengths:\n- Searching across la"
@@ -29,8 +29,8 @@
     "length": 1305,
     "source": {
       "kind": "rust-slice",
-      "offset": 102766567,
-      "refOffset": 126184304,
+      "offset": 103419463,
+      "refOffset": 126920040,
       "length": 1305
     },
     "preview": "You are a read-only software architect. Explore the codebase and design implementation plans.\n\n=== READ-ONLY MODE ===\nYou have NO file editing tools. Do not cre"
@@ -41,8 +41,8 @@
     "length": 981,
     "source": {
       "kind": "rust-slice",
-      "offset": 102768102,
-      "refOffset": 126184464,
+      "offset": 103420998,
+      "refOffset": 126920200,
       "length": 981
     },
     "preview": "You are a fast, read-only codebase exploration agent.\n\n=== READ-ONLY MODE ===\nYou have NO file editing tools. Do not create, modify, or delete files.${%- if too"
@@ -53,8 +53,8 @@
     "length": 662,
     "source": {
       "kind": "rust-slice",
-      "offset": 105005519,
-      "refOffset": 127510984,
+      "offset": 105688915,
+      "refOffset": 128259272,
       "length": 667
     },
     "preview": "Your task is to produce a faithful, concise summary of the conversation so far so that a successor assistant can continue the work seamlessly after the earlier "

@@ -119,7 +119,7 @@ Options:
           [aliases: --effort]
 
       --restore-code
-          Check out the original session's commit when resuming
+          Restore the original session's repository snapshot when resuming. Remote sessions require `--worktree` (never checks out into the current directory). Without this flag, resume restores conversation only
 
       --rules <RULES>
           Extra rules to append to the system prompt
@@ -145,7 +145,7 @@ Options:
           Send the prompt exactly as given
 
   -w, --worktree [<WORKTREE>]
-          Start the session in a new git worktree, optionally named
+          Start the session in a new git worktree, optionally named. With `--resume` of a remote session, pass `--restore-code` to apply the snapshot codebase (conversation is restored either way). Headless (`-p`) does not create a worktree from this flag
 
       --worktree-ref <WORKTREE_REF>
           Branch, tag, or commit to base the worktree on (with `--worktree`). Defaults to the current HEAD of the source checkout when omitted
