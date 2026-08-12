@@ -27,15 +27,15 @@ The scripts write:
 
 <!-- BEGIN GENERATED CATALOG -->
 
-Source binary: vendor/grok/1.0.0/grok
-Grok Build: grok 1.0.0 (3cd0d0cbcebe)
-Previous generated version: grok 0.2.118 (1e1687c1cf6a)
+Source binary: vendor/grok/1.0.3/grok
+Grok Build: grok 1.0.3 (1a29d5bc12d4)
+Previous generated version: grok 1.0.0 (3cd0d0cbcebe)
 
 Change summary:
 - Added: 0
-- Changed: 0
+- Changed: 1
 - Removed: 0
-- Unchanged: 5
+- Unchanged: 4
 
 ### Added
 
@@ -43,7 +43,7 @@ Change summary:
 
 ### Changed
 
-- (none)
+- [search-agent](prompts/search-agent.md)
 
 ### Removed
 
