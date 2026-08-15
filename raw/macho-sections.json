@@ -3,132 +3,132 @@
     "segname": "__TEXT",
     "sectname": "__text",
     "addr": "0x100000f00",
-    "size": 98705912,
+    "size": 98943244,
     "offset": 3840
   },
   {
     "segname": "__TEXT",
     "sectname": "__stubs",
-    "addr": "0x105e230f8",
+    "addr": "0x105e5d00c",
     "size": 5556,
-    "offset": 98709752
+    "offset": 98947084
   },
   {
     "segname": "__TEXT",
     "sectname": "__stub_helper",
-    "addr": "0x105e246ac",
+    "addr": "0x105e5e5c0",
     "size": 5580,
-    "offset": 98715308
+    "offset": 98952640
   },
   {
     "segname": "__TEXT",
     "sectname": "__cstring",
-    "addr": "0x105e25c78",
-    "size": 481942,
-    "offset": 98720888
+    "addr": "0x105e5fb90",
+    "size": 482565,
+    "offset": 98958224
   },
   {
     "segname": "__TEXT",
     "sectname": "__const",
-    "addr": "0x105e9c000",
-    "size": 18570512,
-    "offset": 99205120
+    "addr": "0x105ed6000",
+    "size": 18611472,
+    "offset": 99442688
   },
   {
     "segname": "__TEXT",
     "sectname": "__gcc_except_tab",
-    "addr": "0x107051d10",
-    "size": 17528,
-    "offset": 117775632
+    "addr": "0x107095d10",
+    "size": 17624,
+    "offset": 118054160
   },
   {
     "segname": "__TEXT",
     "sectname": "__ustring",
-    "addr": "0x107056188",
+    "addr": "0x10709a1e8",
     "size": 28,
-    "offset": 117793160
+    "offset": 118071784
   },
   {
     "segname": "__TEXT",
     "sectname": "__unwind_info",
-    "addr": "0x1070561a4",
-    "size": 876576,
-    "offset": 117793188
+    "addr": "0x10709a204",
+    "size": 880176,
+    "offset": 118071812
   },
   {
     "segname": "__TEXT",
     "sectname": "__eh_frame",
-    "addr": "0x10712c1c8",
-    "size": 7234156,
-    "offset": 118669768
+    "addr": "0x107171038",
+    "size": 7261272,
+    "offset": 118951992
   },
   {
     "segname": "__DATA_CONST",
     "sectname": "__got",
-    "addr": "0x107814000",
+    "addr": "0x107860000",
     "size": 160,
-    "offset": 125911040
+    "offset": 126222336
   },
   {
     "segname": "__DATA_CONST",
     "sectname": "__mod_init_func",
-    "addr": "0x1078140a0",
+    "addr": "0x1078600a0",
     "size": 24,
-    "offset": 125911200
+    "offset": 126222496
   },
   {
     "segname": "__DATA_CONST",
     "sectname": "__const",
-    "addr": "0x1078140c0",
-    "size": 5233360,
-    "offset": 125911232
+    "addr": "0x1078600c0",
+    "size": 5249232,
+    "offset": 126222528
   },
   {
     "segname": "__DATA",
     "sectname": "__la_symbol_ptr",
-    "addr": "0x107d14000",
+    "addr": "0x107d64000",
     "size": 3704,
-    "offset": 131153920
+    "offset": 131481600
   },
   {
     "segname": "__DATA",
     "sectname": "__data",
-    "addr": "0x107d14e80",
-    "size": 218184,
-    "offset": 131157632
+    "addr": "0x107d64e80",
+    "size": 219864,
+    "offset": 131485312
   },
   {
     "segname": "__DATA",
     "sectname": "__thread_vars",
-    "addr": "0x107d4a2c8",
-    "size": 2592,
-    "offset": 131375816
+    "addr": "0x107d9a958",
+    "size": 2640,
+    "offset": 131705176
   },
   {
     "segname": "__DATA",
     "sectname": "__thread_data",
-    "addr": "0x107d4ace8",
+    "addr": "0x107d9b3a8",
     "size": 503,
-    "offset": 131378408
+    "offset": 131707816
   },
   {
     "segname": "__DATA",
     "sectname": "__thread_bss",
-    "addr": "0x107d4aee0",
+    "addr": "0x107d9b5a0",
     "size": 2000,
     "offset": 0
   },
   {
     "segname": "__DATA",
     "sectname": "__common",
-    "addr": "0x107d4b800",
+    "addr": "0x107d9c000",
     "size": 1107322,
     "offset": 0
   },
   {
     "segname": "__DATA",
     "sectname": "__bss",
-    "addr": "0x107e59d80",
+    "addr": "0x107eaa580",
     "size": 88657,
     "offset": 0
   }
