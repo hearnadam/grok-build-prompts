@@ -40,9 +40,6 @@ Options:
       --disallowed-tools <TOOLS>
           Built-in tools to remove (comma-separated)
 
-      --experimental-memory
-          Enable cross-session memory
-
       --fork-session
           When resuming (`--resume` / `--continue`), create a new session ID instead of reusing the original (optionally set via `--session-id`)
 
@@ -72,9 +69,6 @@ Options:
 
       --no-alt-screen
           Run inline instead of using the terminal alternate screen
-
-      --no-memory
-          Disable cross-session memory for this session
 
       --no-plan
           Disable plan mode
