@@ -5,8 +5,8 @@
     "length": 986,
     "source": {
       "kind": "rust-slice",
-      "offset": 107275997,
-      "refOffset": 130140064,
+      "offset": 107635425,
+      "refOffset": 130558936,
       "length": 1001
     },
     "preview": "You are a memory assistant performing an incremental update. The previous flush output for this session is shown below. Extract ONLY information that is NEW sin"
@@ -17,8 +17,8 @@
     "length": 1189,
     "source": {
       "kind": "rust-slice",
-      "offset": 105123217,
-      "refOffset": 128894920,
+      "offset": 105469521,
+      "refOffset": 129302472,
       "length": 1189
     },
     "preview": "Complete the assigned task directly. Do what was asked; nothing more, nothing less. Report results in the format and length the task specifies; otherwise give a"
@@ -29,8 +29,8 @@
     "length": 1305,
     "source": {
       "kind": "rust-slice",
-      "offset": 105128546,
-      "refOffset": 128895128,
+      "offset": 105474850,
+      "refOffset": 129302680,
       "length": 1305
     },
     "preview": "You are a read-only software architect. Explore the codebase and design implementation plans.\n\n=== READ-ONLY MODE ===\nYou have NO file editing tools. Do not cre"
@@ -41,8 +41,8 @@
     "length": 981,
     "source": {
       "kind": "rust-slice",
-      "offset": 105130081,
-      "refOffset": 128895288,
+      "offset": 105476385,
+      "refOffset": 129302840,
       "length": 981
     },
     "preview": "You are a fast, read-only codebase exploration agent.\n\n=== READ-ONLY MODE ===\nYou have NO file editing tools. Do not create, modify, or delete files.${%- if too"
@@ -53,8 +53,8 @@
     "length": 662,
     "source": {
       "kind": "rust-slice",
-      "offset": 107490820,
-      "refOffset": 130287008,
+      "offset": 107849504,
+      "refOffset": 130705296,
       "length": 667
     },
     "preview": "Your task is to produce a faithful, concise summary of the conversation so far so that a successor assistant can continue the work seamlessly after the earlier "
