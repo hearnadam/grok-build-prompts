@@ -2,12 +2,12 @@
   {
     "name": "memory-incremental-update",
     "category": "prompt",
-    "length": 986,
+    "length": 1429,
     "source": {
       "kind": "rust-slice",
-      "offset": 107635425,
-      "refOffset": 130558936,
-      "length": 1001
+      "offset": 107160057,
+      "refOffset": 129717232,
+      "length": 1444
     }
   },
   {
@@ -16,8 +16,8 @@
     "length": 1189,
     "source": {
       "kind": "rust-slice",
-      "offset": 105469521,
-      "refOffset": 129302472,
+      "offset": 104788233,
+      "refOffset": 128406488,
       "length": 1189
     }
   },
@@ -27,8 +27,8 @@
     "length": 1305,
     "source": {
       "kind": "rust-slice",
-      "offset": 105474850,
-      "refOffset": 129302680,
+      "offset": 104793562,
+      "refOffset": 128406696,
       "length": 1305
     }
   },
@@ -38,8 +38,8 @@
     "length": 981,
     "source": {
       "kind": "rust-slice",
-      "offset": 105476385,
-      "refOffset": 129302840,
+      "offset": 104795097,
+      "refOffset": 128406856,
       "length": 981
     }
   },
@@ -49,8 +49,8 @@
     "length": 662,
     "source": {
       "kind": "rust-slice",
-      "offset": 107849504,
-      "refOffset": 130705296,
+      "offset": 107387574,
+      "refOffset": 129876344,
       "length": 667
     }
   }

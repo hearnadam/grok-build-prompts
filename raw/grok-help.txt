@@ -44,7 +44,7 @@ Options:
           When resuming (`--resume` / `--continue`), create a new session ID instead of reusing the original (optionally set via `--session-id`)
 
       --fullscreen
-          Open in the standard fullscreen TUI for this session, overriding a config `[ui] screen_mode = "minimal"` preference. Session-scoped only — does not write config. Fullscreen-vs-inline still follows the alt-screen policy (--no-alt-screen, [terminal] alt_screen, terminal auto-detection)
+          Open in the standard fullscreen TUI for this session, overriding a config `[ui] screen_mode = "minimal"` preference. Session-scoped only, does not write config. Fullscreen-vs-inline still follows the alt-screen policy (--no-alt-screen, [terminal] alt_screen, terminal auto-detection)
 
   -h, --help
           Print help (see a summary with '-h')
@@ -65,7 +65,7 @@ Options:
           Maximum number of agent turns
 
       --minimal
-          Experimental: scrollback-native rendering. Finalized blocks are printed into the terminal's native scrollback (use the terminal's own scroll / selection); a small pinned region holds the prompt + running turn. Session-scoped only — does not write config. To default plain `grok` to minimal, set `[ui] screen_mode = "minimal"` in ~/.grok/config.toml
+          Experimental: scrollback-native rendering. Finalized blocks are printed into the terminal's native scrollback (use the terminal's own scroll / selection). A small pinned region holds the prompt and running turn. Session-scoped only, does not write config. To default plain `grok` to minimal, set `[ui] screen_mode = "minimal"` in ~/.grok/config.toml
 
       --no-alt-screen
           Run inline instead of using the terminal alternate screen
@@ -85,7 +85,7 @@ Options:
           Possible values:
           - plain
           - json
-          - streaming-json:          NDJSON of the agent native ACP session updates
+          - streaming-json:          NDJSON: one ACP session update per line, the agent's native format
           - streaming-messages-json: NDJSON in the Anthropic Messages API wire format
           
           [default: plain]
@@ -105,7 +105,7 @@ Options:
           Single-turn prompt as JSON content blocks
 
   -r, --resume [<SESSION_ID_OR_TITLE>]
-          Resume a session by ID or title, or the most recent if omitted. Non-ID values match session titles for the current directory (ignoring letter case; a sole renamed match wins among duplicates, otherwise ambiguity errors; UUID-shaped values always mean IDs)
+          Resume a session by ID or title, or the most recent if omitted. Non-ID values match session titles for the current directory, ignoring letter case; UUID-shaped values always mean IDs. Among duplicate titles a sole renamed match wins; otherwise the resume fails as ambiguous
 
       --reasoning-effort <EFFORT>
           Reasoning effort for reasoning models
@@ -119,7 +119,7 @@ Options:
           Extra rules to append to the system prompt
 
   -s, --session-id <SESSION_ID>
-          Use a specific session UUID for a **new** conversation (must be a valid UUID and must not already exist under the target session directory). With `--resume`/`--continue`, only valid together with `--fork-session` (names the forked session). Does not resume existing sessions — use `--resume` / `--continue` instead
+          Use a specific session UUID for a **new** conversation (must be a valid UUID and must not already exist under the target session directory). With `--resume`/`--continue`, only valid together with `--fork-session` (names the forked session). Does not resume existing sessions, use `--resume` / `--continue` instead
 
       --sandbox <PROFILE>
           Sandbox profile for filesystem and network access
@@ -148,6 +148,7 @@ Options:
 
 Commands:
   agent        Run Grok without the interactive UI
+  clone        Lazy-clone a git repository via grove (NFS on macOS, FUSE on Linux)
   completions  Generate shell completion scripts (bash, zsh, fish, powershell, ...)
   dashboard    Open the Agent Dashboard view at startup
   doctor       Check terminal, clipboard, color, and input support without starting Grok
@@ -168,4 +169,4 @@ Commands:
   update       Check for updates or install a specific version
   version      Print version information [aliases: v]
   worktree     Manage git worktrees
-  wrap         Run any command with local clipboard support (OSC 52 → system clipboard)
+  wrap         Run any command with local clipboard support (forwards OSC 52 to the system clipboard)

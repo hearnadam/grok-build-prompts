@@ -1,21 +1,22 @@
 {
-  "fromVersion": "grok 1.0.4 (d846eb93d94d)",
-  "toVersion": "grok 1.0.5 (5115b46bc909)",
+  "fromVersion": "grok 1.0.5 (5115b46bc909)",
+  "toVersion": "grok 1.0.13 (5e9a58528b76)",
   "totals": {
     "added": 0,
     "removed": 0,
-    "changed": 0,
-    "unchanged": 5
+    "changed": 1,
+    "unchanged": 4
   },
   "added": [],
   "removed": [],
-  "changed": [],
-  "unchanged": [
+  "changed": [
     {
       "category": "prompt",
       "name": "memory-incremental-update",
       "path": "prompts/memory-incremental-update.md"
-    },
+    }
+  ],
+  "unchanged": [
     {
       "category": "prompt",
       "name": "search-agent",

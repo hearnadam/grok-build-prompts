@@ -1,7 +1,7 @@
 {
   "name": "grok-build-prompts",
   "grokBuild": {
-    "version": "1.0.5",
+    "version": "1.0.13",
     "channel": "stable",
     "baseUrl": "https://x.ai/cli",
     "fallbackBaseUrl": "https://storage.googleapis.com/grok-build-public-artifacts/cli"
