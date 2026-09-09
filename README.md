@@ -27,15 +27,15 @@ The scripts write:
 
 <!-- BEGIN GENERATED CATALOG -->
 
-Source binary: vendor/grok/1.0.13/grok
-Grok Build: grok 1.0.13 (5e9a58528b76)
-Previous generated version: grok 1.0.5 (5115b46bc909)
+Source binary: vendor/grok/1.0.24/grok
+Grok Build: grok 1.0.24 (68e414c661e3)
+Previous generated version: grok 1.0.13 (5e9a58528b76)
 
 Change summary:
 - Added: 0
-- Changed: 1
+- Changed: 0
 - Removed: 0
-- Unchanged: 4
+- Unchanged: 5
 
 ### Added
 
@@ -43,7 +43,7 @@ Change summary:
 
 ### Changed
 
-- [memory-incremental-update](prompts/memory-incremental-update.md)
+- (none)
 
 ### Removed
 

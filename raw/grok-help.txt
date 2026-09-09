@@ -56,7 +56,7 @@ Options:
           JSON Schema for structured output. When set, the model is constrained to produce JSON matching this schema. Implies --output-format json. Example: --json-schema '{"type":"object","properties":{"name":{"type":"string"}}}'
 
       --leader-socket <PATH>
-          Use a custom leader socket path instead of the default `~/.grok/leader.sock`
+          Use a custom leader socket path instead of the default `~/.grok/leader.sock`. A local/branch build can thus run an isolated leader without colliding with the default one already running on the machine Name it `~/.grok/leader-*.sock` to keep `grok leader list/kill` able to find it; any other location works but won't be auto-discovered
 
   -m, --model <MODEL>
           Model ID to use
@@ -65,7 +65,7 @@ Options:
           Maximum number of agent turns
 
       --minimal
-          Experimental: scrollback-native rendering. Finalized blocks are printed into the terminal's native scrollback (use the terminal's own scroll / selection). A small pinned region holds the prompt and running turn. Session-scoped only, does not write config. To default plain `grok` to minimal, set `[ui] screen_mode = "minimal"` in ~/.grok/config.toml
+          Experimental: scrollback-native rendering. Finalized blocks are printed into the terminal's native scrollback (use the terminal's own scroll / selection). Session-scoped only, does not write config
 
       --no-alt-screen
           Run inline instead of using the terminal alternate screen
@@ -139,7 +139,7 @@ Options:
           Send the prompt exactly as given
 
   -w, --worktree [<WORKTREE>]
-          Start the session in a new git worktree, optionally named. With `--resume` of a remote session, pass `--restore-code` to apply the snapshot codebase (conversation is restored either way). Headless (`-p`) does not create a worktree from this flag
+          Start the session in a new git worktree, optionally named. With `--resume` of a remote session, pass `--restore-code` to apply the snapshot codebase (conversation is restored either way)
 
       --worktree-ref <WORKTREE_REF>
           Branch, tag, or commit to base the worktree on (with `--worktree`). Defaults to the current HEAD of the source checkout when omitted
@@ -150,7 +150,7 @@ Commands:
   agent        Run Grok without the interactive UI
   clone        Lazy-clone a git repository via grove (NFS on macOS, FUSE on Linux)
   completions  Generate shell completion scripts (bash, zsh, fish, powershell, ...)
-  dashboard    Open the Agent Dashboard view at startup
+  dashboard    Open the Agent Dashboard view at startup. The dashboard shows every session, top-level and subagents. Disabled when `[dashboard].enabled = false` in `~/.grok/config.toml` or when the `GROK_AGENT_DASHBOARD=0` env var is set
   doctor       Check terminal, clipboard, color, and input support without starting Grok
   du           Show what the grok home (~/.grok) uses on disk [aliases: disk-usage]
   export       Export a session transcript as Markdown
@@ -167,6 +167,7 @@ Commands:
   setup        Fetch and install managed configuration
   trace        Export or upload session trace data
   update       Check for updates or install a specific version
+  usage        Print persisted token and cost usage for a session
   version      Print version information [aliases: v]
   worktree     Manage git worktrees
   wrap         Run any command with local clipboard support (forwards OSC 52 to the system clipboard)
