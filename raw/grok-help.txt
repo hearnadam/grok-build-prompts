@@ -147,27 +147,28 @@ Options:
           [aliases: --ref]
 
 Commands:
-  agent        Run Grok without the interactive UI
-  clone        Lazy-clone a git repository via grove (NFS on macOS, FUSE on Linux)
-  completions  Generate shell completion scripts (bash, zsh, fish, powershell, ...)
-  dashboard    Open the Agent Dashboard view at startup. The dashboard shows every session, top-level and subagents. Disabled when `[dashboard].enabled = false` in `~/.grok/config.toml` or when the `GROK_AGENT_DASHBOARD=0` env var is set
-  doctor       Check terminal, clipboard, color, and input support without starting Grok
-  du           Show what the grok home (~/.grok) uses on disk [aliases: disk-usage]
-  export       Export a session transcript as Markdown
-  help         Print this message or the help of the given subcommand(s)
-  inspect      Show the configuration Grok discovers for this directory
-  leader       Manage running leader processes
-  login        Sign in to Grok
-  logout       Sign out and clear cached credentials
-  mcp          Manage MCP server configurations
-  memory       Manage cross-session memory
-  models       List available models and exit
-  plugin       Manage plugins and marketplace sources
-  sessions     List, search, or restore sessions
-  setup        Fetch and install managed configuration
-  trace        Export or upload session trace data
-  update       Check for updates or install a specific version
-  usage        Print persisted token and cost usage for a session
-  version      Print version information [aliases: v]
-  worktree     Manage git worktrees
-  wrap         Run any command with local clipboard support (forwards OSC 52 to the system clipboard)
+  agent          Run Grok without the interactive UI
+  clone          Lazy-clone a git repository via grove (NFS on macOS, FUSE on Linux)
+  completions    Generate shell completion scripts (bash, zsh, fish, powershell, ...)
+  cursor-worker  Register this machine as a Cursor private worker (via the leader)
+  dashboard      Open the Agent Dashboard view at startup. The dashboard shows every session, top-level and subagents. Disabled when `[dashboard].enabled = false` in `~/.grok/config.toml` or when the `GROK_AGENT_DASHBOARD=0` env var is set
+  doctor         Check terminal, clipboard, color, and input support without starting Grok
+  du             Show what the grok home (~/.grok) uses on disk [aliases: disk-usage]
+  export         Export a session transcript as Markdown
+  help           Print this message or the help of the given subcommand(s)
+  inspect        Show the configuration Grok discovers for this directory
+  leader         Manage running leader processes
+  login          Sign in to Grok
+  logout         Sign out and clear cached credentials
+  mcp            Manage MCP server configurations
+  memory         Manage cross-session memory
+  models         List available models and exit
+  plugin         Manage plugins and marketplace sources
+  sessions       List, search, or restore sessions
+  setup          Fetch and install managed configuration
+  trace          Export or upload session trace data
+  update         Check for updates or install a specific version
+  usage          Print persisted token and cost usage for a session
+  version        Print version information [aliases: v]
+  worktree       Manage git worktrees
+  wrap           Run any command with local clipboard support (forwards OSC 52 to the system clipboard)
