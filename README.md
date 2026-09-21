@@ -27,15 +27,15 @@ The scripts write:
 
 <!-- BEGIN GENERATED CATALOG -->
 
-Source binary: vendor/grok/1.0.34/grok
-Grok Build: grok 1.0.34 (3736acbc8658)
-Previous generated version: grok 1.0.30 (04b7ffed98c6)
+Source binary: vendor/grok/1.0.40/grok
+Grok Build: grok 1.0.40 (eb1a2256660d)
+Previous generated version: grok 1.0.34 (3736acbc8658)
 
 Change summary:
 - Added: 0
 - Changed: 0
-- Removed: 0
-- Unchanged: 5
+- Removed: 3
+- Unchanged: 2
 
 ### Added
 
@@ -47,7 +47,9 @@ Change summary:
 
 ### Removed
 
-- (none)
+- [search-agent](prompts/search-agent.md)
+- [search-agent-2](prompts/search-agent-2.md)
+- [search-agent-3](prompts/search-agent-3.md)
 
 Notes:
 - The extractor dynamically parses Mach-O sections and uses Rust string-slice records for native prompt components.
@@ -57,9 +59,6 @@ Notes:
 ## Prompts
 
 - [memory-incremental-update](prompts/memory-incremental-update.md)
-- [search-agent](prompts/search-agent.md)
-- [search-agent-2](prompts/search-agent-2.md)
-- [search-agent-3](prompts/search-agent-3.md)
 - [your-task-is-to-produce-a-faithful-concise-summary-of-the-conversation-s](prompts/your-task-is-to-produce-a-faithful-concise-summary-of-the-conversation-s.md)
 
 ## Subagents
