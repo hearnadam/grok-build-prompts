@@ -5,47 +5,11 @@
     "length": 1429,
     "source": {
       "kind": "rust-slice",
-      "offset": 118035226,
-      "refOffset": 138994272,
+      "offset": 119791436,
+      "refOffset": 141210920,
       "length": 1444
     },
     "preview": "You are a memory assistant performing an incremental update. The previous flush output for this session is shown below. Extract ONLY information that is NEW sin"
-  },
-  {
-    "name": "search-agent",
-    "category": "prompt",
-    "length": 1189,
-    "source": {
-      "kind": "rust-slice",
-      "offset": 115385033,
-      "refOffset": 137522880,
-      "length": 1189
-    },
-    "preview": "Complete the assigned task directly. Do what was asked; nothing more, nothing less. Report results in the format and length the task specifies; otherwise give a"
-  },
-  {
-    "name": "search-agent-2",
-    "category": "prompt",
-    "length": 1305,
-    "source": {
-      "kind": "rust-slice",
-      "offset": 115390362,
-      "refOffset": 137523040,
-      "length": 1305
-    },
-    "preview": "You are a read-only software architect. Explore the codebase and design implementation plans.\n\n=== READ-ONLY MODE ===\nYou have NO file editing tools. Do not cre"
-  },
-  {
-    "name": "search-agent-3",
-    "category": "prompt",
-    "length": 981,
-    "source": {
-      "kind": "rust-slice",
-      "offset": 115391897,
-      "refOffset": 137523104,
-      "length": 981
-    },
-    "preview": "You are a fast, read-only codebase exploration agent.\n\n=== READ-ONLY MODE ===\nYou have NO file editing tools. Do not create, modify, or delete files.${%- if too"
   },
   {
     "name": "your-task-is-to-produce-a-faithful-concise-summary-of-the-conversation-s",
@@ -53,8 +17,8 @@
     "length": 662,
     "source": {
       "kind": "rust-slice",
-      "offset": 118287737,
-      "refOffset": 139181976,
+      "offset": 120046080,
+      "refOffset": 141405392,
       "length": 667
     },
     "preview": "Your task is to produce a faithful, concise summary of the conversation so far so that a successor assistant can continue the work seamlessly after the earlier "
