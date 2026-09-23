@@ -27,14 +27,14 @@ The scripts write:
 
 <!-- BEGIN GENERATED CATALOG -->
 
-Source binary: vendor/grok/1.0.40/grok
-Grok Build: grok 1.0.40 (eb1a2256660d)
-Previous generated version: grok 1.0.34 (3736acbc8658)
+Source binary: vendor/grok/1.0.41/grok
+Grok Build: grok 1.0.41 (4220f3b224a6)
+Previous generated version: grok 1.0.40 (eb1a2256660d)
 
 Change summary:
 - Added: 0
 - Changed: 0
-- Removed: 3
+- Removed: 0
 - Unchanged: 2
 
 ### Added
@@ -47,9 +47,7 @@ Change summary:
 
 ### Removed
 
-- [search-agent](prompts/search-agent.md)
-- [search-agent-2](prompts/search-agent-2.md)
-- [search-agent-3](prompts/search-agent-3.md)
+- (none)
 
 Notes:
 - The extractor dynamically parses Mach-O sections and uses Rust string-slice records for native prompt components.

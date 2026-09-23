@@ -5,8 +5,8 @@
     "length": 1429,
     "source": {
       "kind": "rust-slice",
-      "offset": 119791436,
-      "refOffset": 141210920,
+      "offset": 120101156,
+      "refOffset": 141558640,
       "length": 1444
     }
   },
@@ -16,8 +16,8 @@
     "length": 662,
     "source": {
       "kind": "rust-slice",
-      "offset": 120046080,
-      "refOffset": 141405392,
+      "offset": 120357192,
+      "refOffset": 141753776,
       "length": 667
     }
   }

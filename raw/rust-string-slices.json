@@ -5,8 +5,8 @@
     "length": 1429,
     "source": {
       "kind": "rust-slice",
-      "offset": 119791436,
-      "refOffset": 141210920,
+      "offset": 120101156,
+      "refOffset": 141558640,
       "length": 1444
     },
     "preview": "You are a memory assistant performing an incremental update. The previous flush output for this session is shown below. Extract ONLY information that is NEW sin"
@@ -17,8 +17,8 @@
     "length": 662,
     "source": {
       "kind": "rust-slice",
-      "offset": 120046080,
-      "refOffset": 141405392,
+      "offset": 120357192,
+      "refOffset": 141753776,
       "length": 667
     },
     "preview": "Your task is to produce a faithful, concise summary of the conversation so far so that a successor assistant can continue the work seamlessly after the earlier "
