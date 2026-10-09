@@ -3,133 +3,133 @@
     "segname": "__TEXT",
     "sectname": "__text",
     "addr": "0x100000e00",
-    "size": 115165864,
+    "size": 121527184,
     "offset": 3584
   },
   {
     "segname": "__TEXT",
     "sectname": "__stubs",
-    "addr": "0x106dd58a8",
-    "size": 5592,
-    "offset": 115169448
+    "addr": "0x1073e6990",
+    "size": 5604,
+    "offset": 121530768
   },
   {
     "segname": "__TEXT",
     "sectname": "__stub_helper",
-    "addr": "0x106dd6e80",
-    "size": 5616,
-    "offset": 115175040
+    "addr": "0x1073e7f74",
+    "size": 5628,
+    "offset": 121536372
+  },
+  {
+    "segname": "__TEXT",
+    "sectname": "__const",
+    "addr": "0x1073ea000",
+    "size": 19348608,
+    "offset": 121544704
   },
   {
     "segname": "__TEXT",
     "sectname": "__cstring",
-    "addr": "0x106dd8470",
-    "size": 497589,
-    "offset": 115180656
-  },
-  {
-    "segname": "__TEXT",
-    "sectname": "__const",
-    "addr": "0x106e52000",
-    "size": 16735504,
-    "offset": 115679232
-  },
-  {
-    "segname": "__TEXT",
-    "sectname": "__gcc_except_tab",
-    "addr": "0x107e47d10",
-    "size": 20428,
-    "offset": 132414736
+    "addr": "0x10865dc80",
+    "size": 590186,
+    "offset": 140893312
   },
   {
     "segname": "__TEXT",
     "sectname": "__ustring",
-    "addr": "0x107e4ccdc",
+    "addr": "0x1086eddea",
     "size": 28,
-    "offset": 132435164
+    "offset": 141483498
+  },
+  {
+    "segname": "__TEXT",
+    "sectname": "__gcc_except_tab",
+    "addr": "0x1086ede08",
+    "size": 9668,
+    "offset": 141483528
   },
   {
     "segname": "__TEXT",
     "sectname": "__unwind_info",
-    "addr": "0x107e4ccf8",
-    "size": 1014200,
-    "offset": 132435192
+    "addr": "0x1086f03cc",
+    "size": 1727368,
+    "offset": 141493196
   },
   {
     "segname": "__TEXT",
     "sectname": "__eh_frame",
-    "addr": "0x107f446b0",
-    "size": 8433940,
-    "offset": 133449392
-  },
-  {
-    "segname": "__DATA_CONST",
-    "sectname": "__got",
-    "addr": "0x108750000",
-    "size": 160,
-    "offset": 141885440
+    "addr": "0x108895f58",
+    "size": 13691736,
+    "offset": 143220568
   },
   {
     "segname": "__DATA_CONST",
     "sectname": "__mod_init_func",
-    "addr": "0x1087500a0",
+    "addr": "0x1095a8000",
     "size": 24,
-    "offset": 141885600
+    "offset": 156925952
   },
   {
     "segname": "__DATA_CONST",
     "sectname": "__const",
-    "addr": "0x1087500c0",
-    "size": 5710992,
-    "offset": 141885632
+    "addr": "0x1095a8020",
+    "size": 6675024,
+    "offset": 156925984
+  },
+  {
+    "segname": "__DATA_CONST",
+    "sectname": "__got",
+    "addr": "0x109c05a70",
+    "size": 160,
+    "offset": 163601008
   },
   {
     "segname": "__DATA",
     "sectname": "__la_symbol_ptr",
-    "addr": "0x108cc4000",
-    "size": 3728,
-    "offset": 147603456
+    "addr": "0x109c08000",
+    "size": 3736,
+    "offset": 163610624
   },
   {
     "segname": "__DATA",
     "sectname": "__data",
-    "addr": "0x108cc4e90",
-    "size": 258480,
-    "offset": 147607184
+    "addr": "0x109c08ea0",
+    "size": 269272,
+    "offset": 163614368
   },
   {
     "segname": "__DATA",
     "sectname": "__thread_vars",
-    "addr": "0x108d04040",
-    "size": 2832,
-    "offset": 147865664
+    "addr": "0x109c4aa78",
+    "size": 2904,
+    "offset": 163883640
   },
   {
     "segname": "__DATA",
     "sectname": "__thread_data",
-    "addr": "0x108d04b50",
-    "size": 600,
-    "offset": 147868496
+    "addr": "0x109c4b5d0",
+    "size": 673,
+    "offset": 163886544
   },
   {
     "segname": "__DATA",
     "sectname": "__thread_bss",
-    "addr": "0x108d04da8",
-    "size": 2200,
+    "addr": "0x109c4b878",
+    "size": 4464,
     "offset": 0
   },
   {
     "segname": "__DATA",
     "sectname": "__common",
-    "addr": "0x108d05800",
-    "size": 1107322,
+    "addr": "0x109c4d000",
+    "size": 1105274,
     "offset": 0
   },
   {
     "segname": "__DATA",
     "sectname": "__bss",
-    "addr": "0x108e13d80",
-    "size": 89401,
+    "addr": "0x109d5ad80",
+    "size": 90544,
     "offset": 0
   }
 ]

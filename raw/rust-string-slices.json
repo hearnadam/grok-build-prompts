@@ -1,24 +1,12 @@
 [
   {
-    "name": "memory-incremental-update",
-    "category": "prompt",
-    "length": 1429,
-    "source": {
-      "kind": "rust-slice",
-      "offset": 124227433,
-      "refOffset": 146151144,
-      "length": 1444
-    },
-    "preview": "You are a memory assistant performing an incremental update. The previous flush output for this session is shown below. Extract ONLY information that is NEW sin"
-  },
-  {
     "name": "your-task-is-to-produce-a-faithful-concise-summary-of-the-conversation-s",
     "category": "prompt",
     "length": 662,
     "source": {
       "kind": "rust-slice",
-      "offset": 124490935,
-      "refOffset": 146349616,
+      "offset": 125986753,
+      "refOffset": 159016320,
       "length": 667
     },
     "preview": "Your task is to produce a faithful, concise summary of the conversation so far so that a successor assistant can continue the work seamlessly after the earlier "
