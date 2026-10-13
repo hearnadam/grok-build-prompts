@@ -27,14 +27,14 @@ The scripts write:
 
 <!-- BEGIN GENERATED CATALOG -->
 
-Source binary: vendor/grok/1.0.50/grok
-Grok Build: grok 1.0.50 (c58f321264ba)
-Previous generated version: grok 1.0.46 (2765805b9442)
+Source binary: vendor/grok/1.0.52/grok
+Grok Build: grok 1.0.52 (0920c8169e27)
+Previous generated version: grok 1.0.50 (c58f321264ba)
 
 Change summary:
 - Added: 0
 - Changed: 0
-- Removed: 1
+- Removed: 0
 - Unchanged: 1
 
 ### Added
@@ -47,7 +47,7 @@ Change summary:
 
 ### Removed
 
-- [memory-incremental-update](prompts/memory-incremental-update.md)
+- (none)
 
 Notes:
 - The extractor dynamically parses Mach-O sections and uses Rust string-slice records for native prompt components.
