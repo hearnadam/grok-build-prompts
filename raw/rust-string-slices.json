@@ -5,8 +5,8 @@
     "length": 662,
     "source": {
       "kind": "rust-slice",
-      "offset": 133320666,
-      "refOffset": 167665872,
+      "offset": 135065406,
+      "refOffset": 169445728,
       "length": 667
     },
     "preview": "Your task is to produce a faithful, concise summary of the conversation so far so that a successor assistant can continue the work seamlessly after the earlier "

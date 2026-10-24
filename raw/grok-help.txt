@@ -55,7 +55,7 @@ Options:
       --no-subagents
           Disable subagent spawning
       --oauth
-          Use OAuth when the welcome screen starts authentication
+          Force browser (loopback) login when the welcome screen authenticates
       --output-format <OUTPUT_FORMAT>
           Output format for headless mode [default: plain] [possible values: plain, json, streaming-json, streaming-messages-json]
   -p, --single <PROMPT>
