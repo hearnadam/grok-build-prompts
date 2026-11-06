@@ -112,7 +112,7 @@ Commands:
   setup        Fetch and install managed configuration
   trace        Export or upload session trace data
   update       Check for updates or install a specific version
-  usage        Print persisted token and cost usage for a session
+  usage        Print your plan's usage limit, or a session's persisted token and cost usage
   version      Print version information [aliases: v]
   worker       Run this machine as a Cursor private worker
   worktree     Manage git worktrees
