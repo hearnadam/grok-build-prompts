@@ -1,6 +1,6 @@
 {
-  "fromVersion": "grok 1.0.67 (2fe064390d07)",
-  "toVersion": "grok 1.0.70 (f50904eaee6c)",
+  "fromVersion": "grok 1.0.70 (f50904eaee6c)",
+  "toVersion": "grok 1.0.77 (50ca579fa996)",
   "totals": {
     "added": 0,
     "removed": 0,
