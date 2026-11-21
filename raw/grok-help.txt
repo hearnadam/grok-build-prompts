@@ -1,9 +1,9 @@
 Grok Build TUI
 
-Usage: grok [OPTIONS] [PROMPT] [COMMAND]
+Usage: grok [OPTIONS] [PROMPT]... [COMMAND]
 
 Arguments:
-  [PROMPT]  Initial prompt for the interactive session
+  [PROMPT]...  Initial prompt for the interactive session
 
 Options:
       --add-dir <DIR>
@@ -46,10 +46,14 @@ Options:
           Model ID to use
       --max-turns <N>
           Maximum number of agent turns
+      --memory-flush
+          Wait for memory capture before a headless run exits
       --minimal
           Experimental: scrollback-native rendering
       --no-alt-screen
           Run inline instead of using the terminal alternate screen
+      --no-memory
+          Disable cross-session memory for this process
       --no-plan
           Disable plan mode
       --no-subagents
@@ -58,7 +62,7 @@ Options:
           Force browser (loopback) login when the welcome screen authenticates
       --output-format <OUTPUT_FORMAT>
           Output format for headless mode [default: plain] [possible values: plain, json, streaming-json, streaming-messages-json]
-  -p, --single <PROMPT>
+  -p, --single [<PROMPT>]
           Single-turn prompt. Prints the response to stdout and exits
       --permission-mode <MODE>
           Permission mode [possible values: default, acceptEdits, auto, dontAsk, bypassPermissions, plan]
@@ -78,6 +82,8 @@ Options:
           Use a specific session UUID for a new conversation
       --sandbox <PROFILE>
           Sandbox profile for filesystem and network access [env: GROK_SANDBOX=]
+      --system-prompt-file <PATH>
+          Override the agent's system prompt with the text of a file
       --system-prompt-override <PROMPT>
           Override the agent's system prompt (compat alias: --system-prompt)
       --tools <TOOLS>
